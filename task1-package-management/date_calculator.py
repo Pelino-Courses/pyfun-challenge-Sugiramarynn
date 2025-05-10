@@ -1,7 +1,24 @@
 import datetime
 
 def differ_time(start_time, end_time):
-        """This is a function tha"""
+        """ Compares two datetime strings and prints the time difference.
+
+    Parameters:
+    start_time (str): The start time in the format "%Y-%m-%d %H:%M:%S"
+    end_time (str): The end time in the format "%Y-%m-%d %H:%M:%S"
+
+    Returns:
+    None
+
+    Prints:
+    - "Time Left is equal ..." if end_time is after start_time
+    - "Time has passed for ..." if end_time is before start_time
+    - "It is time" if both times are equal
+
+    Example:
+    >>> differ_time("2025-05-10 12:00:00", "2025-05-10 14:00:00")
+    Time Left is equal 2:00:00
+       """
         try:
             start_time = datetime.datetime.strptime(x,"%Y-%m-%d %H:%M:%S")
             end_time = datetime.datetime.strptime(y,"%Y-%m-%d %H:%M:%S")
